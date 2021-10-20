@@ -1,0 +1,39 @@
+.footerTop{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid #808080 ;
+   
+}
+.footerTopStore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footerTopStore a img{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    transition: transform 450ms;
+}
+.footerTopStore a img:hover{
+    transform: scale(1.09);
+}
+
+@media only screen and (max-width: 768px){
+    .footerTop{
+        width:100%;
+        margin: unset;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .footerTopStore a img{
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+        
+    }
+}

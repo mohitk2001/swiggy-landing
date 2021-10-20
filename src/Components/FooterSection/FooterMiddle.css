@@ -1,0 +1,42 @@
+.footerMiddle {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid #808080 ;
+ 
+}
+.footerMiddle h3 {
+  color: #808080;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 25px;
+ 
+}
+.dataWrapped{
+    display: flex;
+}
+@media only screen and (max-width: 768px){
+  .footerMiddle{
+    width: 100%;
+  }
+  .dataWrapped{
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+
+}
+.footerMiddle h3{
+  text-align: center;
+}
+}
+
+@media only screen and (max-width: 500px){
+  .footerMiddle h3 {
+  
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+  }
+}

@@ -1,0 +1,27 @@
+.feature{
+    width: 100%;
+    background-color: #2B1E16;
+    font-family: ProximaNova, Arial, "Helvetica Neue", sans-serif;
+}
+
+.featureContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px){
+    .featureContainer{
+       width: 100%;
+       margin: unset;
+       flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    .featureContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+}

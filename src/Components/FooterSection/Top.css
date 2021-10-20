@@ -1,0 +1,31 @@
+.top{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 50px;
+   
+}
+
+.top>a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 35px;
+    transition: transform 450ms;
+}
+.top>a:hover{
+    transform: scale(1.09);
+}
+@media only screen and (max-width: 500px){
+    .top{
+       
+        margin-top: 20px;
+       
+    }
+    .top>a{ 
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+    }
+}

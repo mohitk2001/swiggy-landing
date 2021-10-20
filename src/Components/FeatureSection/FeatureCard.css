@@ -1,0 +1,55 @@
+.FeatureCard {
+  flex: 0.3;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.FeatureCard > img {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+.FeatureCard > h1 {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+.FeatureCard > p {
+  color: #e0cbc1;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+@media only screen and (max-width: 768px) {
+    .FeatureCard {
+        flex: 1;
+        text-align: center;
+    }
+    .FeatureCard > img {
+        height: 150px;
+        width: 150px;
+        object-fit: contain;
+        margin-top: 5px;
+    }
+    .FeatureCard > h1 {
+        color: #ffff;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .FeatureCard > p {
+        color: #e0cbc1;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 5px;
+      }
+
+}
+@media only screen and (max-width: 500px){
+    .FeatureCard {
+        flex: 1;
+        text-align: center;
+      }
+}

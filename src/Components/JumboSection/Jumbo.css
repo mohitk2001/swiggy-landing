@@ -1,0 +1,192 @@
+.jumbo {
+  width: 100%;
+  font-family: ProximaNova, Arial, "Helvetica Neue", sans-serif;
+  display: flex;
+}
+
+.jumboLeft {
+  width: 55%;
+  padding-left: 50px;
+}
+
+.jumboLeftHeader {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.swiggyLogo {
+  width: 60px;
+  height: 70px;
+  object-fit: contain;
+}
+.logoPart {
+  display: flex;
+}
+.logoPart > h1 {
+  line-height: 16px;
+  letter-spacing: 3px;
+  color: #fc8019;
+  font-weight: 800;
+  align-self: center;
+}
+.buttons {
+  display: flex;
+}
+.login {
+  height: 40px;
+  width: 110px;
+  color: #000;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.signUp {
+  height: 40px;
+  width: 110px;
+  background-color: #000;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.login:hover {
+  cursor: pointer;
+  color: #fc8019;
+}
+.signUp:hover {
+  cursor: pointer;
+}
+
+.jumboRight {
+  width: 45%;
+  height: 550px;
+}
+.jumboRight > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .jumboLeft {
+    width: 55%;
+    padding-left: unset;
+  }
+  .jumboLeftHeader {
+    width: 90%;
+  }
+  .login {
+    height: 30px;
+    width: 70px;
+  }
+  .signUp {
+    height: 30px;
+    width: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .jumbo {
+    flex-direction: column;
+  }
+  .jumboLeft {
+    width: 100%;
+    padding-left: unset;
+  }
+
+  .login {
+    height: 40px;
+    width: 90px;
+  }
+  .signUp {
+    height: 40px;
+    width: 90px;
+  }
+  .swiggyLogo {
+    width: 40px;
+    height: 45px;
+    object-fit: contain;
+  }
+  .logoPart > h1 {
+    line-height: 14px;
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+  .jumboRight {
+    width: 100%;
+    height: 400px;
+  }
+  .jumboRight > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .jumboLeftHeader {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .login {
+    height: 30px;
+    width: 60px;
+
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .signUp {
+    height: 30px;
+    width: 60px;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .swiggyLogo {
+    width: 40px;
+    height: 45px;
+    object-fit: contain;
+  }
+  .logoPart > h1 {
+    line-height: 14px;
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+  .jumboRight {
+    width: 100%;
+    height: 250px;
+  }
+  .jumboRight > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .login {
+    height: 30px;
+    width: 40px;
+
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .signUp {
+    height: 30px;
+    width: 40px;
+
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .swiggyLogo {
+    width: 30px;
+    height: 35px;
+    object-fit: contain;
+  }
+  .logoPart > h1 {
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+}

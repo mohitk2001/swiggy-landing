@@ -1,0 +1,110 @@
+.loginCompo {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 0px;
+  width: 550px;
+  height: 100%;
+  background: #ffffff;
+  display: none;
+  
+}
+.iconCross{
+  font-size: 30px;
+  width: 100px;
+}
+
+.loginBox {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 400px;
+  line-height: 40px;
+}
+
+.loginHead {
+  display: flex;
+  justify-content: space-between;
+}
+.loginHead > div > h1 {
+  font-weight: 500;
+}
+.loginImage {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+.handleUnderBox{
+  display: flex;
+  flex-direction: column;
+
+}
+#logINBTN {
+  
+  outline: none;
+  border: 1px solid lightgray;
+  height: 60px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+#logButton {
+ 
+  height: 50px;
+  background-color: #fc8019;
+  color: white;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+.loginBox > p {
+  font-size: 12px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 768px) {
+  .loginCompo {
+    width: 100%;
+  }
+  .iconCross{
+    font-size: 25px;
+  }
+  .loginBox {
+    width: 400px;
+    line-height: 40px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .loginImage {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .iconCross{
+    font-size: 20px;
+  }
+  .loginCompo {
+    height: 50%;
+  }
+  .loginBox {
+    line-height: 30px;
+  }
+
+  .loginHead > div > h1 {
+    font-weight: 500;
+    
+  }
+}

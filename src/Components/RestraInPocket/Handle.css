@@ -1,0 +1,141 @@
+.handle {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: ProximaNova, Arial, "Helvetica Neue", sans-serif;
+  display: flex;
+}
+.handle_left {
+  width: 50%;
+}
+.handle_L_container {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  
+}
+.handle_L_container > h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.handle_L_container > p {
+  color: #7e808c;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.handle_store {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.handle_store>a > img {
+  width: 179px;
+  height: 54px;
+  object-fit: contain;
+}
+.handle_right {
+  width: 50%;
+  display: flex;
+}
+.handle_right > img {
+  height: 350px;
+  object-fit: contain;
+  width: 300px;
+}
+
+.lowerImage {
+  margin-top: 90px;
+}
+@media (max-width: 1186px) and (min-width: 768px) {
+    .handle_L_container {
+        margin-top: 40px;
+        
+      }
+  .handle_L_container > p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .handle_store>a > img {
+    width: 120px;
+    height: 40px;
+    object-fit: contain;
+  }
+  .handle_right > img {
+    height: 250px;
+    object-fit: contain;
+    width: 200px;
+  }
+  .handle_L_container > h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .handle {
+    flex-direction: column;
+  }
+  .handle_left {
+    width: 100%;
+  }
+  .handle_L_container {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .handle_L_container > h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .handle_L_container > p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .handle_store {
+    justify-content: center;
+  }
+ 
+  .handle_right {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+
+  .handle_right > img {
+    height: 300px;
+    object-fit: contain;
+    width: 300px;
+  }
+
+  .lowerImage {
+    align-self: flex-end;
+    margin-top: unset;
+  }
+}
+@media only screen and (max-width: 500px){
+    .handle_store>a > img {
+        width: 100px;
+        height: 40px;
+        object-fit: contain;
+      }
+      .handle_right > img {
+        height: 150px;
+        object-fit: contain;
+        width: 150px;
+      }
+}
+@media only screen and (max-width: 250px){
+  .handle_right > img {
+    height: 90px;
+    object-fit: contain;
+    width: 90px;
+  }
+  .handle_store>a > img {
+    width: 90px;
+    height: 30px;
+    object-fit: contain;
+  }
+}
